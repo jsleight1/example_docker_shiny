@@ -5,7 +5,7 @@ RVERSION=4.4.2
 image: Dockerfile
 	docker buildx \
 		build \
-		--platform linux/arm64,linux/amd64 \
+		--platform linux/arm64 \
 		-t jsleight1/example_docker_shiny:R${RVERSION}-${DATE} \
 		-t jsleight1/example_docker_shiny:R${RVERSION}-latest \
 		-f Dockerfile \
